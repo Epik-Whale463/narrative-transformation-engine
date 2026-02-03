@@ -1,0 +1,45 @@
+{
+  "world_id": "legal_tech_2024",
+  "name": "The Recognition Case",
+  "characters": {
+    "DUSHYANTA": {
+      "mapping": "Senior Associate at Puru Law Partners",
+      "role": "handles unregistered property claims",
+      "voice": "formal but gets emotional about cases"
+    },
+    "SHAKOONTALA": {
+      "mapping": "Woman living in forest archive, no official ID",
+      "status": "guardianship under Kanva (archive keeper)",
+      "problem": "can't prove who she is legally"
+    },
+    "MATHAVYA": {
+      "mapping": "Junior associate who complains a lot",
+      "role": "comic relief, logs everything"
+    }
+  },
+  "objects": {
+    "ring": {
+      "mapping": "notary seal / digital signature",
+      "what_it_does": "proves Dushyanta's identity, she needs it to claim rights later"
+    },
+    "bark_dress": {
+      "mapping": "no official clothes = no official status",
+      "meaning": "she's not in the system"
+    },
+    "lotus_leaf": {
+      "mapping": "handwritten note (not formal contract)",
+      "validity": "counts because they both agreed, even if not registered"
+    }
+  },
+  "concepts": {
+    "love": "having stake in someone else's property/rights",
+    "forgetting": "statute of limitations - wait too long, lose claim",
+    "curse": "technicality that blocks recognition",
+    "gandharva_marriage": "common law marriage - valid without registration if both act like it"
+  },
+  "validation": {
+    "check": "does transformed scene keep same emotional beats as original?",
+    "method": "embedding similarity > 0.85",
+    "name": "PrecedentLock"
+  }
+}
