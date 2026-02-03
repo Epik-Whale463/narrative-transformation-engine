@@ -54,7 +54,7 @@ Why not LLM-as-judge? Learned at AI4Bharat - metrics beat opinions. Embedding si
 
 DAG validation caught most errors before I read output. Rest fixed manually.
 
-## Why Legal?
+## Why Legal? I'm a FANN of SUITS 😊(its a TV Show)
 
 Could've done AI labs (like Romeo & Juliet example). I felt its TOO generic.
 
