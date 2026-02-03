@@ -124,7 +124,8 @@ Legal system has built-in "recognition without registration": common law marriag
 
 ## One Clever Idea: PrecedentLock
 
-```Most narrative transformation uses LLM-as-judge: "Does this capture the original?" 
+```
+Most narrative transformation uses LLM-as-judge: "Does this capture the original?" 
 Slow, expensive, subjective.
 
 I repurposed **embedding similarity** as objective validation. First 500 chars of 
@@ -132,5 +133,6 @@ scene establish emotional valence. If transformed embeds similarly, "ratio
 decidendi" (reasoning) is preserved. Fast, cheap, reproducible.
 
 Meta-layer: Legal metaphor extends to validation itself — "stare decisis" 
-(consistency with precedent).```
+(consistency with precedent).
+```
 
