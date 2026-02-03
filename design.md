@@ -61,28 +61,3 @@ Could've done AI labs (like Romeo & Juliet example). I felt its TOO generic.
 Could've done cyberpunk. Cool but "recognition token" is just another MacGuffin.
 
 Legal system has built-in "recognition without registration": common law marriage, equitable estoppel, precedent. Ring as notary seal maps perfectly - physical token bridging informal agreement and formal validity.
-
-## Code Notes
-
-Kept it messy on purpose:
-
-- TODO comments where it's brittle
-- Debug prints commented out, not deleted  
-- `max_tokens=1800  # bumped up - was cutting off scenes`
-
-DAG validation is simple - checks characters and ring state. Tried adding semantic intent validation ("she_keeps_it_he_pines") but regex on natural language is fragile. Removed it.
-
-## TODO
-
-- Better scene parsing (markers are brittle)
-- Multi-world support (worlds/ directory with JSON per world)
-- Auto-retry if PrecedentLock < 0.85
-- Fix union scene dialogue (still says "won't return" sometimes)
-
-## Stats
-
-Time: ~7 hours
-API calls: 11 (one per scene)
-Cost: ~$0.60
-Lines: ~350 (probably less if cleaned up)
-Failed attempts: 3
