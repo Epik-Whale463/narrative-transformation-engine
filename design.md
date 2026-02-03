@@ -44,13 +44,13 @@ Why not LLM-as-judge? Learned at AI4Bharat - metrics beat opinions. Embedding si
 
 ## What I Fixed
 
-| Problem | How Found | Fix |
-|---------|-----------|-----|
+| Problem                     | How Found                                 | Fix                                         |
+|----------------------------|-------------------------------------------|---------------------------------------------|
+| Ring direction reversed     | Read output, saw "refuses to return" in scene 6 | Added `ring_intent` to DAG: `"gift_not_loan"` |
+| Gautami in Act I            | Validation flagged "too early"            | Enforced character lists per node           |
+| Union became courtroom fight| Scene tone drifted adversarial            | Added `scene_tone`: `"private_consensual"`  |
+| Mathavya in separation      | Only Gautami should interrupt             | Added check for `scene_id`                  |
 
-| Ring direction reversed | Read output, saw "refuses to return" in scene 6 | Added ring_intent to DAG: "gift_not_loan" |
-| Gautami in Act I | Validation flagged "too early" | Enforced character lists per node |
-| Union became courtroom fight | Scene tone drifted adversarial | Added scene_tone: "private_consensual" |
-| Mathavya in separation | Only Gautami should interrupt | Added check for scene_id |
 
 DAG validation caught most errors before I read output. Rest fixed manually.
 
