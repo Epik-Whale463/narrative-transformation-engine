@@ -8,6 +8,55 @@ First output had Shakuntala refusing to return ring before Dushyanta gave it to 
 
 Inspiration: Been watching Suits. Mike Ross has no law degree (no "official ID") but Harvey recognizes him anyway. Same as Shakuntala and the ring. Wanted that dynamic.
 
+## Approach Diagram
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                      Shakuntalam.txt                            │
+│                   (Source Epic Text)                            │
+└────────────────────────┬────────────────────────────────────────┘
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                   Scene Parser                                  │
+│          Marker-based extraction (###SCENE###)                  │
+└────────────────────────┬────────────────────────────────────────┘
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                    DAG Constructor                              │
+│     Topological sort ensures narrative dependencies            │
+│     (e.g., ring_given → ring_kept → ring_lost)                 │
+└────────────────────────┬────────────────────────────────────────┘
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                  FAISS Retriever                                │
+│     Fetch relevant world rules from world_rules.json           │
+│     using scene embedding similarity                           │
+└────────────────────────┬────────────────────────────────────────┘
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                   GPT-4o-mini Generator                         │
+│     Transform scene with DAG constraints injected               │
+│     Maintain emotional arc & narrative coherence                │
+└────────────────────────┬────────────────────────────────────────┘
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                  PrecedentLock Validator                        │
+│     Cosine similarity check (threshold: 0.75)                   │
+│     Ensures emotional fidelity to source                        │
+└────────────────────────┬────────────────────────────────────────┘
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                 transformed_story.md                            │
+│          Final output with preserved narrative logic            │
+└─────────────────────────────────────────────────────────────────┘
+```
+
 ## Why DAG?
 
 Tried 3 times with simple prompts:
