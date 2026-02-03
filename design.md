@@ -110,3 +110,27 @@ Could've done AI labs (like Romeo & Juliet example). I felt its TOO generic.
 Could've done cyberpunk. Cool but "recognition token" is just another MacGuffin.
 
 Legal system has built-in "recognition without registration": common law marriage, equitable estoppel, precedent. Ring as notary seal maps perfectly - physical token bridging informal agreement and formal validity.
+
+## Alternatives Considered
+
+| Approach                          | Why It Failed                                      |
+|-----------------------------------|----------------------------------------------------|
+| Single prompt for full text       | Lost scene-level detail, no validation hooks        |
+| No DAG, just list of scenes       | Chronology broke repeatedly                         |
+| LLM-as-judge for validation       | Slow, expensive, subjective                         |
+| Few-shot with 3 examples          | Worked per-scene, failed across transitions         |
+| AI labs world (like assignment example) | Too generic, matches their Romeo & Juliet demo too closely |
+
+
+## One Clever Idea: PrecedentLock
+
+```Most narrative transformation uses LLM-as-judge: "Does this capture the original?" 
+Slow, expensive, subjective.
+
+I repurposed **embedding similarity** as objective validation. First 500 chars of 
+scene establish emotional valence. If transformed embeds similarly, "ratio 
+decidendi" (reasoning) is preserved. Fast, cheap, reproducible.
+
+Meta-layer: Legal metaphor extends to validation itself — "stare decisis" 
+(consistency with precedent).```
+
