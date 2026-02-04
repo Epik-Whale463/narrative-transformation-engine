@@ -294,7 +294,14 @@ def transform_scene(scene, rules, world, client):
     elif "gautami" not in [c.lower() for c in required_chars]:
         constraints.append("- Gautami does NOT appear (too early)")
     
-    # Build prompt
+    # Build prompt based on format
+    if fmt.lower() in ['prose', 'prose_narrative', 'narrative']:
+        format_instruction = "flowing prose narrative with embedded dialogue (no screenplay format, no stage directions)"
+        format_note = "Write as continuous narrative prose. Embed key dialogue naturally with quotes."
+    else:
+        format_instruction = "screenplay format with INT./EXT. headers and stage directions"
+        format_note = "Use dramatic script format with scene headers and character names."
+    
     prompt = f"""Transform this scene from Shakuntalam into legal setting (2024).
 
 WORLD CONTEXT:
@@ -307,10 +314,10 @@ CHARACTERS:
 
 HOUSE STYLE (GLOBAL):
 - Tone mode: {tone_mode}
-- Format: {fmt} (use INT./EXT. headers if screenplay)
+- Format: {format_instruction}
 - Do NOT use archaic terms: {', '.join(banned) if banned else '—'}
 - Prefer modern legal vocabulary: {', '.join(preferred) if preferred else '—'}
-- Cap monologues to ~{house.get('max_monologue_words', 'N/A')} words; alternate dialogue lines
+- Cap monologues to ~{house.get('max_monologue_words', 'N/A')} words; keep dialogue concise
 
 CHARACTER VOICES:
 - Dushyanta: {voices.get('DUSHYANTA', world['characters']['DUSHYANTA'].get('voice',''))}
@@ -331,8 +338,8 @@ INSTRUCTIONS:
 - Keep emotional beat: {beat}
 - Use legal terminology from world context
 - Obey HOUSE STYLE strictly
-- Dramatic script format (consistent with {fmt})
-- Preserve dialogue structure
+- {format_note}
+- Keep output concise (max 200-250 words per scene for prose)
 
 TRANSFORMED SCENE:"""
 

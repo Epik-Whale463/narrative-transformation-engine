@@ -98,6 +98,8 @@ Why not LLM-as-judge? Learned at AI4Bharat - metrics beat opinions. Embedding si
 - After generation, a quick check enforces style (no banned terms, cap monologues, ensure INT./EXT. if screenplay). If violated, do one minimal rewrite.
 - Net effect: system dictates voice and format; model just writes within those rails.
 
+**Output format**: Added `style.format` to world_rules.json - pipeline can generate either `prose_narrative` (normal story) or `screenplay` (script format). Set it to prose to hit the 2-3 page target (caps each scene to ~200-250 words in the prompt). Generated screenplay version too (`transformed_story_full.md`), kept it as backup.
+
 ## What I Fixed
 
 | Problem                     | How Found                                 | Fix                                         |
@@ -121,7 +123,7 @@ Legal system has built-in "recognition without registration": common law marriag
 ## TODO / Future Work
 
 - DAG is hardcoded for Shakuntalam - would need to extract scene structure automatically for other texts
-- Scene parsing uses string markers which is brittle af
+- Scene parsing uses string markers which is brittle
 - Maybe add --debug flag to dump retrieved rules and validation scores to JSON
 - Test with Acts IV-VII (only did I-III for now)
 

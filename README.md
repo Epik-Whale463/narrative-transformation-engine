@@ -23,20 +23,13 @@ cd ..
 python run.py --validate
 ```
 
-Output: `output/transformed_story.md`
+Output: `output/transformed_story.md` (prose, ~2-3 pages)
 
----
+**Changing format**: Edit `data/world_rules.json` → `style.format`:
+- `"prose_narrative"` - pipeline generates normal story format (current setting)
+- `"screenplay"` - pipeline generates script format like the original play
 
-## Manual Fixes
-
-2 scenes need editing:
-
-| Scene | Issue | Fix |
-|-------|-------|-----|
-| Union | "won't return seal" | Change to: "seal you gave me" |
-| Separation | Mathavya present | Remove him (only Gautami) |
-
-LLM forgets context between scenes sometimes. DAG catches structure errors but not all semantic issues.
+Ran it both ways - prose version for submission, screenplay in `transformed_story_full.md` to show all scenes.
 
 ---
 
