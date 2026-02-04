@@ -53,7 +53,8 @@ Inspiration: Been watching Suits. Mike Ross has no law degree (no "official ID")
                          │
                          ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                 transformed_story.md                            │
+│                 transformed_story.md                            |
+|          Prose narrative (2-3 pages) or full screenplay         │
 │          Final output with preserved narrative logic            │
 └─────────────────────────────────────────────────────────────────┘
 ```
