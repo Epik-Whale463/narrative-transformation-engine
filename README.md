@@ -1,6 +1,6 @@
 # Shakuntalam Legal Transformation
 
-## A pipeline that generates stories grounded in a defined world and template, ensuring consistency and coherence beyond generic LLM outputs.
+## I built a pipeline that generates stories grounded in a defined world and template, ensuring consistency and coherence beyond generic LLM outputs.
 
 Transforms Shakuntalam (Sanskrit drama) into modern legal drama. Uses RAG + DAG to keep narrative consistent.
 
