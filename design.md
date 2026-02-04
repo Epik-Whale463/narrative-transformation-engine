@@ -91,6 +91,13 @@ shakuntalam.txt → parse by markers → DAG sort → FAISS retrieve → GPT-4o-
 
 Why not LLM-as-judge? Learned at AI4Bharat - metrics beat opinions. Embedding similarity is reproducible, fast, cheap.
 
+## House Style (data‑driven)
+
+- world_rules.json now defines style: tone_mode, format, banned/preferred terms, max_monologue_words, character_voices.
+- Each prompt injects a HOUSE STYLE block (tone, format, lexicon, voices) in addition to DAG constraints.
+- After generation, a quick check enforces style (no banned terms, cap monologues, ensure INT./EXT. if screenplay). If violated, do one minimal rewrite.
+- Net effect: system dictates voice and format; model just writes within those rails.
+
 ## What I Fixed
 
 | Problem                     | How Found                                 | Fix                                         |

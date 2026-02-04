@@ -13,7 +13,9 @@ cp .env.example .env
 ## Run
 
 ```bash
+cd scripts/
 python build_index.py  # one-time setup
+cd ..
 python run.py --validate
 ```
 

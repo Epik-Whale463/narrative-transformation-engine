@@ -41,5 +41,39 @@
     "check": "does transformed scene keep same emotional beats as original?",
     "method": "embedding similarity > 0.85",
     "name": "PrecedentLock"
+  },
+  "style": {
+    "tone_mode": "serious_legal_tragedy",
+    "format": "screenplay", 
+    "house_rules": {
+      "banned_terms": [
+        "in good sooth",
+        "methinks",
+        "aye",
+        "heigh-ho",
+        "venerable",
+        "sire"
+      ],
+      "preferred_terms": [
+        "jurisdiction",
+        "affidavit",
+        "registration",
+        "notary seal",
+        "case file",
+        "precedent",
+        "consent",
+        "recognition"
+      ],
+      "max_monologue_words": 120,
+      "sentence_length": { "target": 18, "max": 28 }
+    },
+    "character_voices": {
+      "DUSHYANTA": "composed, empathetic, precise; minimal ornament",
+      "SHAKOONTALA": "assertive, witty, clear; not passive",
+      "MATHAVYA": "dry, terse, wry; no slapstick, no slang"
+    }
+  },
+  "policies": {
+    "retry": { "max_attempts": 2, "on": ["banned_terms", "monologue_length", "format"] }
   }
 }

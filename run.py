@@ -246,6 +246,13 @@ def transform_scene(scene, rules, world, client):
     scene_tone = dag_data.get('scene_tone', '')
     ring_intent = dag_data.get('ring_intent', '')
     char_goals = dag_data.get('char_goals', {})
+    style = world.get('style', {})
+    house = style.get('house_rules', {})
+    banned = house.get('banned_terms', [])
+    preferred = house.get('preferred_terms', [])
+    tone_mode = style.get('tone_mode', '')
+    fmt = style.get('format', '')
+    voices = style.get('character_voices', {})
     
     # constraints list
     constraints = []
@@ -298,6 +305,18 @@ CHARACTERS:
 - Shakuntala = {world['characters']['SHAKOONTALA']['mapping']}
 - Mathavya = {world['characters']['MATHAVYA']['mapping']}
 
+HOUSE STYLE (GLOBAL):
+- Tone mode: {tone_mode}
+- Format: {fmt} (use INT./EXT. headers if screenplay)
+- Do NOT use archaic terms: {', '.join(banned) if banned else '—'}
+- Prefer modern legal vocabulary: {', '.join(preferred) if preferred else '—'}
+- Cap monologues to ~{house.get('max_monologue_words', 'N/A')} words; alternate dialogue lines
+
+CHARACTER VOICES:
+- Dushyanta: {voices.get('DUSHYANTA', world['characters']['DUSHYANTA'].get('voice',''))}
+- Shakuntala: {voices.get('SHAKOONTALA', world['characters']['SHAKOONTALA'].get('voice',''))}
+- Mathavya: {voices.get('MATHAVYA', world['characters']['MATHAVYA'].get('voice',''))}
+
 SCENE: {scene['description']} (Beat: {beat}, Tone: {scene_tone})
 REQUIRED CHARACTERS: {', '.join(required_chars)}
 
@@ -311,7 +330,8 @@ INSTRUCTIONS:
 - Follow narrative constraints exactly
 - Keep emotional beat: {beat}
 - Use legal terminology from world context
-- Dramatic script format
+- Obey HOUSE STYLE strictly
+- Dramatic script format (consistent with {fmt})
 - Preserve dialogue structure
 
 TRANSFORMED SCENE:"""
@@ -325,8 +345,53 @@ TRANSFORMED SCENE:"""
         temperature=0.7,  # TODO: try 0.6 if still getting weird outputs
         max_tokens=1800  # bumped up - was cutting off scenes
     )
+    draft = response.choices[0].message.content
+
+    # simple style enforcement pass
+    violations = []
+    text_lower = draft.lower()
+    for term in banned:
+        if term and term.lower() in text_lower:
+            violations.append(f"banned term: {term}")
+    max_words = house.get('max_monologue_words')
+    if max_words:
+        # rough check: any paragraph over max_words
+        for para in draft.split("\n\n"):
+            if len(para.split()) > max_words:
+                violations.append("monologue too long")
+                break
+    # format nudge: ensure screenplay INT./EXT. if chosen
+    if fmt == 'screenplay' and ('INT.' not in draft and 'EXT.' not in draft):
+        violations.append("missing screenplay headers")
+
+    if violations:
+        fix_prompt = f"""You produced a draft that violates HOUSE STYLE. Fix minimally (keep content), just adjust diction/format.
+
+HOUSE STYLE:
+- Tone: {tone_mode}
+- Format: {fmt}
+- Do NOT use: {', '.join(banned)}
+- Cap monologues to ~{max_words} words
+
+Violations:
+- {chr(10).join(violations)}
+
+Draft:
+{draft}
+
+Rewrite the scene to comply. Keep dialogue beats and constraints intact."""
+        resp2 = client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=[
+                {"role": "system", "content": "You are an editor enforcing house style and narrative constraints with minimal changes."},
+                {"role": "user", "content": fix_prompt}
+            ],
+            temperature=0.3,
+            max_tokens=1800
+        )
+        return resp2.choices[0].message.content
     
-    return response.choices[0].message.content
+    return draft
 
 def validate_fidelity(original, transformed, model):
     # PrecedentLock - cosine similarity check
