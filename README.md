@@ -55,6 +55,10 @@ See `design.md` for details.
 
 ## Known Issues
 
-- PrecedentLock scores ~0.2-0.4 (maybe threshold too high?)
+- PrecedentLock threshold set at 0.85 (still tuning - scores vary by scene)
+- Scene parsing uses brittle string markers 
 - Temperature 0.7, max tokens 1800
-- Parsing uses brittle markers
+
+## Output
+
+- Output: `output/transformed_story.md` (prose, ~2-3 pages)
