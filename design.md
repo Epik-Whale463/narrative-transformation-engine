@@ -2,7 +2,7 @@
 
 ## Starting Point
 
-Tried just asking GPT-4 to rewrite Shakuntalam as legal drama. Failed hard.
+Asked GPT-4 to rewrite Shakuntalam as legal drama. Failed hard 😂.
 
 First output had Shakuntala refusing to return ring before Dushyanta gave it to her. Characters appeared in wrong acts. Realized preserving narrative logic is harder than swapping words.
 
@@ -19,34 +19,35 @@ Inspiration: Been watching Suits. Mike Ross has no law degree (no "official ID")
                          ▼
 ┌─────────────────────────────────────────────────────────────────┐
 │                   Scene Parser                                  │
-│          Marker-based extraction (###SCENE###)                  │
+│          Marker-based extraction (string markers)               │
+│          markers live in shakuntalam_dag.json                    │
 └────────────────────────┬────────────────────────────────────────┘
                          │
                          ▼
 ┌─────────────────────────────────────────────────────────────────┐
 │                    DAG Constructor                              │
-│     Topological sort ensures narrative dependencies            │
-│     (e.g., ring_given → ring_kept → ring_lost)                 │
+│     Loads DAG from JSON and topologically sorts scenes          │
+│     (ring order + character timing)                             │
 └────────────────────────┬────────────────────────────────────────┘
                          │
                          ▼
 ┌─────────────────────────────────────────────────────────────────┐
 │                  FAISS Retriever                                │
-│     Fetch relevant world rules from world_rules.json           │
+│     Fetch relevant world rules from world_rules_*.json           │
 │     using scene embedding similarity                           │
 └────────────────────────┬────────────────────────────────────────┘
                          │
                          ▼
 ┌─────────────────────────────────────────────────────────────────┐
 │                   GPT-4o-mini Generator                         │
-│     Transform scene with DAG constraints injected               │
+│     Transform scene with DAG + world constraints injected        │
 │     Maintain emotional arc & narrative coherence                │
 └────────────────────────┬────────────────────────────────────────┘
                          │
                          ▼
 ┌─────────────────────────────────────────────────────────────────┐
 │                  PrecedentLock Validator                        │
-│     Cosine similarity check (threshold: 0.75)                   │
+│     Cosine similarity check (threshold: 0.85)                   │
 │     Ensures emotional fidelity to source                        │
 └────────────────────────┬────────────────────────────────────────┘
                          │
@@ -67,7 +68,7 @@ Tried 3 times with simple prompts:
 
 Problem wasn't prompts. It was causal dependencies. Can't refuse to return something before receiving it.
 
-Used NetworkX (used it before for AI4Bharat project). Built DAG with 11 nodes, edges for order: meeting → lineage → ring_exchange → mathavya_complaint. Topological sort fixes processing order.
+Used NetworkX (used it before for AI4Bharat project). Built DAG with 11 nodes, edges for order: meeting → lineage → ring_exchange → mathavya_complaint. Topological sort fixes processing order. The DAG is now in `data/shakuntalam_dag.json` so it's not hardcoded in Python.
 
 Each node has metadata:
 
@@ -81,11 +82,11 @@ DAG wasn't planned from start. Came from fixing 3 failed attempts.
 
 shakuntalam.txt → parse by markers → DAG sort → FAISS retrieve → GPT-4o-mini → validate → output
 
-**Parsing**: Use marker strings like "Enter King DUSHYANTA" or "Offers a ring". Crude but works.
+**Parsing**: Use marker strings like "Enter King DUSHYANTA" or "Offers a ring" from `shakuntalam_dag.json`. Crude but works.
 
 **Retrieval**: Embed world_rules.json with all-MiniLM-L6-v2 into FAISS. For each scene, get top-3 relevant rules. Keeps prompt focused - Dushyanta stays Senior Associate, doesn't become judge.
 
-**Generation**: Temperature 0.7. Inject constraints from DAG node: "This is a GIFT, not a loan" for ring_exchange, "Gautami does NOT appear" for early scenes. Max tokens 1800 (bumped up after scenes cut off).
+**Generation**: Temperature 0.7. Inject constraints from DAG node + world config. Max tokens 1800 (bumped up after scenes cut off). Prompt templates are in `prompts.py`.
 
 **Validation**: Called it PrecedentLock. Cosine similarity between original and transformed (first 500 chars). Threshold 0.85 - tried 0.7 first (too many false positives, flagged everything), tried 0.9 (missed actual drift). 0.85 felt right but honestly still tuning.
 
@@ -93,22 +94,22 @@ Why not LLM-as-judge? Learned at AI4Bharat - metrics beat opinions. Embedding si
 
 ## House Style (data‑driven)
 
-- world_rules.json now defines style: tone_mode, format, banned/preferred terms, max_monologue_words, character_voices.
-- Each prompt injects a HOUSE STYLE block (tone, format, lexicon, voices) in addition to DAG constraints.
+- world_rules_*.json defines style: tone_mode, format, banned/preferred terms, max_monologue_words, character_voices.
+- `constraint_templates` connects DAG states (ring_state / ring_intent / scene_tone) to world text like "ring_give_action".
+- `scene_constraints` stores per-scene motivations (world-specific).
 - After generation, a quick check enforces style (no banned terms, cap monologues, ensure INT./EXT. if screenplay). If violated, do one minimal rewrite.
 - Net effect: system dictates voice and format; model just writes within those rails.
 
-**Output format**: Added `style.format` to world_rules.json - pipeline can generate either `prose_narrative` (normal story) or `screenplay` (script format). Set it to prose to hit the 2-3 page target (caps each scene to ~200-250 words in the prompt). Generated screenplay version too (`transformed_story_full.md`), kept it as backup.
+**Output format**: `style.format` lets me switch between prose and screenplay. I kept it as prose to fit the 2-3 page target.
 
 ## What I Fixed
 
 | Problem                     | How Found                                 | Fix                                         |
 |----------------------------|-------------------------------------------|---------------------------------------------|
-| Ring direction reversed     | Read output, saw "refuses to return" in scene 6 | Added `ring_intent` to DAG: `"gift_not_loan"` |
-| Gautami in Act I            | Validation flagged "too early"            | Enforced character lists per node           |
-| Union became courtroom fight| Scene tone drifted adversarial            | Added `scene_tone`: `"private_consensual"`  |
-| Mathavya in separation      | Only Gautami should interrupt             | Added check for `scene_id`                  |
-
+| Ring direction reversed     | Read output, saw "refuses to return" too early | Added `ring_intent` in DAG + constraint templates |
+| Gautami in Act I            | Validation flagged "too early"            | Added `forbidden_chars` in DAG              |
+| Union became courtroom fight| Scene tone drifted adversarial            | `scene_tone` + world tone constraints       |
+| Mathavya in separation      | Only Gautami should interrupt             | `only_chars` + DAG constraints              |
 
 DAG validation caught most errors before I read output. Rest fixed manually.
 
@@ -122,7 +123,7 @@ Legal system has built-in "recognition without registration": common law marriag
 
 ## TODO / Future Work
 
-- DAG is hardcoded for Shakuntalam - would need to extract scene structure automatically for other texts
+- If I had time: per-world DAG overrides so Legal/Bollywood can diverge more
 - Scene parsing uses string markers which is brittle
 - Maybe add --debug flag to dump retrieved rules and validation scores to JSON
 - Test with Acts IV-VII (only did I-III for now)
@@ -137,7 +138,6 @@ Legal system has built-in "recognition without registration": common law marriag
 | Few-shot with 3 examples          | Worked per-scene, failed across transitions         |
 | AI labs world (like assignment example) | Too generic, matches their Romeo & Juliet demo too closely |
 
-
 ## One Clever Idea: PrecedentLock
 
 ```
@@ -151,4 +151,3 @@ decidendi" (reasoning) is preserved. Fast, cheap, reproducible.
 Meta-layer: Legal metaphor extends to validation itself — "stare decisis" 
 (consistency with precedent).
 ```
-
