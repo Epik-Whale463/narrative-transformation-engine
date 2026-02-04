@@ -87,7 +87,7 @@ shakuntalam.txt → parse by markers → DAG sort → FAISS retrieve → GPT-4o-
 
 **Generation**: Temperature 0.7. Inject constraints from DAG node: "This is a GIFT, not a loan" for ring_exchange, "Gautami does NOT appear" for early scenes. Max tokens 1800 (bumped up after scenes cut off).
 
-**Validation**: Called it PrecedentLock. Cosine similarity between original and transformed (first 500 chars). Threshold 0.85. Catches drift without subjective "does this feel right" evaluation.
+**Validation**: Called it PrecedentLock. Cosine similarity between original and transformed (first 500 chars). Threshold 0.85 - tried 0.7 first (too many false positives, flagged everything), tried 0.9 (missed actual drift). 0.85 felt right but honestly still tuning.
 
 Why not LLM-as-judge? Learned at AI4Bharat - metrics beat opinions. Embedding similarity is reproducible, fast, cheap.
 
@@ -117,6 +117,13 @@ Could've done AI labs (like Romeo & Juliet example). I felt its TOO generic.
 Could've done cyberpunk. Cool but "recognition token" is just another MacGuffin.
 
 Legal system has built-in "recognition without registration": common law marriage, equitable estoppel, precedent. Ring as notary seal maps perfectly - physical token bridging informal agreement and formal validity.
+
+## TODO / Future Work
+
+- DAG is hardcoded for Shakuntalam - would need to extract scene structure automatically for other texts
+- Scene parsing uses string markers which is brittle af
+- Maybe add --debug flag to dump retrieved rules and validation scores to JSON
+- Test with Acts IV-VII (only did I-III for now)
 
 ## Alternatives Considered
 

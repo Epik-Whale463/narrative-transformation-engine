@@ -2,6 +2,8 @@
 
 Transforms Shakuntalam (Sanskrit drama) into modern legal drama. Uses RAG + DAG to keep narrative consistent.
 
+**Source text**: Monier-Williams translation (1855), public domain. Got it from sacred-texts.com
+
 ## Setup
 
 ```bash
