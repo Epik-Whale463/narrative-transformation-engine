@@ -1,0 +1,148 @@
+{
+  "world_id": "legal_tech_2024",
+  "name": "The Recognition Case",
+  "setting": "legal drama (2024)",
+  "characters": {
+    "DUSHYANTA": {
+      "mapping": "Senior Associate at Puru Law Partners",
+      "role": "handles unregistered property claims",
+      "voice": "formal but gets emotional about cases"
+    },
+    "SHAKOONTALA": {
+      "mapping": "Woman living in forest archive, no official ID",
+      "status": "guardianship under Kanva (archive keeper)",
+      "problem": "can't prove who she is legally"
+    },
+    "MATHAVYA": {
+      "mapping": "Junior associate who complains a lot",
+      "role": "comic relief, logs everything"
+    }
+  },
+  "objects": {
+    "ring": {
+      "mapping": "notary seal / digital signature",
+      "what_it_does": "proves Dushyanta's identity, she needs it to claim rights later"
+    },
+    "bark_dress": {
+      "mapping": "no official clothes = no official status",
+      "meaning": "she's not in the system"
+    },
+    "lotus_leaf": {
+      "mapping": "handwritten note (not formal contract)",
+      "validity": "counts because they both agreed, even if not registered"
+    }
+  },
+  "concepts": {
+    "love": "having stake in someone else's property/rights",
+    "forgetting": "statute of limitations - wait too long, lose claim",
+    "curse": "technicality that blocks recognition",
+    "gandharva_marriage": "common law marriage - valid without registration if both act like it"
+  },
+  "narrative_constraints": {
+    "ring_object": "notary seal/digital signature",
+    "ring_give_action": "Dushyanta MUST give the notary seal/digital signature to Shakuntala",
+    "ring_gift_note": "This is a GIFT, not a loan - he doesn't expect it back",
+    "ring_she_has": "Shakuntala HAS the notary seal (from previous scene)",
+    "ring_no_return": "Shakuntala does NOT give the seal back to Dushyanta",
+    "ring_he_pines": "Dushyanta is distracted/pining for SHAKUNTALA HERSELF, not for the seal back",
+    "ring_no_ask": "NO dialogue about 'refusing to return' - he never asked for it",
+    "ring_waiting": "Dushyanta yearns for SHAKUNTALA TO ARRIVE/CONTACT, not for seal return",
+    "ring_proof": "The seal is WITH HER as proof she will come",
+    "ring_union": "The seal validates their MUTUAL AGREEMENT (common law marriage)",
+    "ring_consensual": "NO conflict about returning seal - this is consensual union",
+    "ring_too_early": "NO mention of ring/seal/signature (too early in story)",
+    "private_setting": "PRIVATE office setting, NOT courtroom",
+    "consensual_note": "CONSENSUAL agreement, both parties willing, no adversarial conflict",
+    "comic_tone": "Comic tone: Mathavya complains about workload",
+    "system_prompt": "You are a legal drama adapter with strict narrative logic. Follow the constraints precisely to maintain story coherence. The ring/seal is a GIFT given once, not repeatedly exchanged."
+  },
+  "constraint_templates": {
+    "ring_state": {
+      "not_present": ["ring_too_early"],
+      "dushyanta_gives_to_shakuntala": ["ring_give_action", "ring_gift_note"],
+      "shakuntala_has_ring": ["ring_she_has", "ring_no_return"]
+    },
+    "ring_intent": {
+      "she_keeps_it_he_pines": ["ring_he_pines", "ring_no_ask"],
+      "she_has_it_he_waits_for_her": ["ring_waiting", "ring_proof"],
+      "seal_validates_mutual_agreement": ["ring_union", "ring_consensual"]
+    },
+    "scene_tone": {
+      "private_consensual": ["private_setting", "consensual_note"],
+      "comic_frustration": ["comic_tone"]
+    }
+  },
+  "scene_constraints": {
+    "ring_exchange": {
+      "char_goals": {
+        "DUSHYANTA": "give the notary seal as proof of commitment and future recognition",
+        "SHAKOONTALA": "accept the seal as a promise of legal recognition"
+      }
+    },
+    "mathavya_complaint": {
+      "char_goals": {
+        "MATHAVYA": "complain about Dushyanta's distraction and workload",
+        "DUSHYANTA": "distracted, thinking of Shakuntala, not wanting the seal back"
+      }
+    },
+    "lovesick": {
+      "char_goals": {
+        "DUSHYANTA": "yearns for Shakuntala to arrive/contact, NOT for the seal back"
+      }
+    },
+    "union": {
+      "char_goals": {
+        "DUSHYANTA": "establish commitment despite bureaucratic system",
+        "SHAKOONTALA": "accept the union as valid without formal registration"
+      }
+    }
+  },
+  "validation": {
+    "check": "does transformed scene keep same emotional beats as original?",
+    "method": "embedding similarity > 0.85",
+    "name": "PrecedentLock",
+    "ring_words": ["ring", "seal", "signature", "notary"],
+    "character_aliases": {
+      "Dushyanta": ["dushyanta", "dushyant", "dush"],
+      "Shakuntala": ["shakuntala", "shakoontala", "shakun"],
+      "Mathavya": ["mathavya", "jester"],
+      "Gautami": ["gautami", "gautami"],
+      "Anasuya": ["anasuya", "anasúyá"],
+      "Hermits": ["hermits", "sages", "ascetics"]
+    }
+  },
+  "style": {
+    "tone_mode": "serious_legal_tragedy",
+    "format": "prose_narrative", 
+    "house_rules": {
+      "banned_terms": [
+        "in good sooth",
+        "methinks",
+        "aye",
+        "heigh-ho",
+        "venerable",
+        "sire"
+      ],
+      "preferred_terms": [
+        "jurisdiction",
+        "affidavit",
+        "registration",
+        "notary seal",
+        "case file",
+        "precedent",
+        "consent",
+        "recognition"
+      ],
+      "max_monologue_words": 120,
+      "sentence_length": { "target": 18, "max": 28 }
+    },
+    "character_voices": {
+      "DUSHYANTA": "composed, empathetic, precise; minimal ornament",
+      "SHAKOONTALA": "assertive, witty, clear; not passive",
+      "MATHAVYA": "dry, terse, wry; no slapstick, no slang"
+    }
+  },
+  "policies": {
+    "retry": { "max_attempts": 2, "on": ["banned_terms", "monologue_length", "format"] }
+  }
+}

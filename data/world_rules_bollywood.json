@@ -1,0 +1,149 @@
+{
+  "world_id": "bollywood_romance_2024",
+  "name": "Pyaar Ka Vaada (Promise of Love)",
+  "setting": "Bollywood romance (2024)",
+  "characters": {
+    "DUSHYANTA": {
+      "mapping": "Dushyant Malhotra, big-shot Bollywood producer from Mumbai",
+      "role": "looking for fresh talent, ends up in shimla for location scouting",
+      "voice": "charming but serious, falls hard when he falls"
+    },
+    "SHAKOONTALA": {
+      "mapping": "Shakuntala, classical dance teacher at small academy in Shimla",
+      "status": "orphan raised by Kanva uncle who runs the academy",
+      "problem": "talented but no connections to industry, never been to Mumbai"
+    },
+    "MATHAVYA": {
+      "mapping": "Mathavya, Dushyant's driver and childhood friend",
+      "role": "comic relief, gives relationship advice, complains about mountain roads"
+    }
+  },
+  "objects": {
+    "ring": {
+      "mapping": "family engagement ring - his mother's ring",
+      "what_it_does": "proof of serious commitment, not just filmi promises"
+    },
+    "bark_dress": {
+      "mapping": "simple salwar kameez vs Mumbai designer clothes",
+      "meaning": "she's not from that world, doesn't fit their lifestyle"
+    },
+    "lotus_leaf": {
+      "mapping": "handwritten letter (not whatsapp)",
+      "validity": "old-school romance, shows he really means it"
+    }
+  },
+  "concepts": {
+    "love": "pyaar - not time-pass but rishta material",
+    "forgetting": "amnesia from car accident on way back to Mumbai",
+    "curse": "his producer partner convinces him Shimla trip never happened",
+    "gandharva_marriage": "secret engagement - families don't know yet"
+  },
+  "narrative_constraints": {
+    "ring_object": "family engagement ring (his mother's heirloom)",
+    "ring_give_action": "Dushyant MUST give the family engagement ring to Shakuntala",
+    "ring_gift_note": "This is serious commitment - his mother's ring, not casual promise",
+    "ring_she_has": "Shakuntala HAS the engagement ring (from previous scene)",
+    "ring_no_return": "Shakuntala does NOT give the ring back to Dushyant",
+    "ring_he_pines": "Dushyant is distracted/pining for SHAKUNTALA HERSELF, not for the ring back",
+    "ring_no_ask": "NO dialogue about 'refusing to return' - he gave it willingly",
+    "ring_waiting": "Dushyant yearns for SHAKUNTALA TO COME TO MUMBAI, not for ring return",
+    "ring_proof": "The ring is WITH HER as proof he'll come back for her",
+    "ring_union": "The ring validates their SECRET ENGAGEMENT (families don't know yet)",
+    "ring_consensual": "NO conflict about returning ring - this is mutual love",
+    "ring_too_early": "NO mention of ring/engagement (too early in story, they just met)",
+    "private_setting": "PRIVATE moment, just the two of them",
+    "consensual_note": "MUTUAL love, both falling for each other, no forced drama",
+    "comic_tone": "Comic tone: Mathavya complains about mountain roads and gives unsolicited love advice",
+    "system_prompt": "You are a Bollywood romance adapter. Keep the emotional beats but make it feel like a Shah Rukh Khan movie - dramatic, romantic, with meaningful silences and big gestures. The ring is his MOTHER'S ring, very significant."
+  },
+  "constraint_templates": {
+    "ring_state": {
+      "not_present": ["ring_too_early"],
+      "dushyanta_gives_to_shakuntala": ["ring_give_action", "ring_gift_note"],
+      "shakuntala_has_ring": ["ring_she_has", "ring_no_return"]
+    },
+    "ring_intent": {
+      "she_keeps_it_he_pines": ["ring_he_pines", "ring_no_ask"],
+      "she_has_it_he_waits_for_her": ["ring_waiting", "ring_proof"],
+      "seal_validates_mutual_agreement": ["ring_union", "ring_consensual"]
+    },
+    "scene_tone": {
+      "private_consensual": ["private_setting", "consensual_note"],
+      "comic_frustration": ["comic_tone"]
+    }
+  },
+  "scene_constraints": {
+    "ring_exchange": {
+      "char_goals": {
+        "DUSHYANTA": "give his mother's ring as proof of real commitment, not a casual promise",
+        "SHAKOONTALA": "accept the ring as a serious commitment, not a filmi flirt"
+      }
+    },
+    "mathavya_complaint": {
+      "char_goals": {
+        "MATHAVYA": "complain about mountain roads and Dushyanta's distraction",
+        "DUSHYANTA": "distracted, thinking of Shakuntala, not wanting the ring back"
+      }
+    },
+    "lovesick": {
+      "char_goals": {
+        "DUSHYANTA": "yearns for Shakuntala to come to Mumbai, NOT for the ring back"
+      }
+    },
+    "union": {
+      "char_goals": {
+        "DUSHYANTA": "commit to a secret engagement despite family expectations",
+        "SHAKOONTALA": "accept the union as real even without families involved yet"
+      }
+    }
+  },
+  "validation": {
+    "check": "does transformed scene keep same emotional beats as original?",
+    "method": "embedding similarity > 0.85",
+    "name": "PrecedentLock",
+    "ring_words": ["ring", "engagement", "heirloom", "mother's ring", "angoothi"],
+    "character_aliases": {
+      "Dushyanta": ["dushyanta", "dushyant", "dush"],
+      "Shakuntala": ["shakuntala", "shakoontala", "shakun"],
+      "Mathavya": ["mathavya", "driver", "friend"],
+      "Gautami": ["gautami", "gautami"],
+      "Anasuya": ["anasuya", "anasúyá"],
+      "Hermits": ["hermits", "sages", "ascetics"]
+    }
+  },
+  "style": {
+    "tone_mode": "romantic_melodrama",
+    "format": "prose_narrative",
+    "house_rules": {
+      "banned_terms": [
+        "in good sooth",
+        "methinks",
+        "aye",
+        "heigh-ho",
+        "venerable",
+        "sire"
+      ],
+      "preferred_terms": [
+        "pyaar",
+        "dil",
+        "rishta",
+        "shaadi",
+        "filmi",
+        "Mumbai",
+        "Shimla",
+        "engagement",
+        "family"
+      ],
+      "max_monologue_words": 100,
+      "sentence_length": { "target": 15, "max": 25 }
+    },
+    "character_voices": {
+      "DUSHYANTA": "confident city guy, but genuine; mixes hindi-english naturally",
+      "SHAKOONTALA": "graceful, witty, proud of her roots; not impressed by money",
+      "MATHAVYA": "loyal friend energy, funny complaints, gives unsolicited advice"
+    }
+  },
+  "policies": {
+    "retry": { "max_attempts": 2, "on": ["banned_terms", "monologue_length", "format"] }
+  }
+}
