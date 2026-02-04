@@ -25,34 +25,36 @@ Inspiration: Been watching Suits. Mike Ross has no law degree (no "official ID")
                          ▼
 ┌─────────────────────────────────────────────────────────────────┐
 │                    DAG Constructor                              │
-│     Topological sort ensures narrative dependencies            │
-│     (e.g., ring_given → ring_kept → ring_lost)                 │
+│     Topological sort ensures narrative dependencies             │
+│     (e.g., ring_given → ring_kept → ring_lost)                  │
 └────────────────────────┬────────────────────────────────────────┘
                          │
                          ▼
 ┌─────────────────────────────────────────────────────────────────┐
 │                  FAISS Retriever                                │
-│     Fetch relevant world rules from world_rules.json           │
-│     using scene embedding similarity                           │
+│     Fetch relevant world rules from world_rules.json            │
+│     using scene embedding similarity                            │
 └────────────────────────┬────────────────────────────────────────┘
                          │
                          ▼
 ┌─────────────────────────────────────────────────────────────────┐
 │                   GPT-4o-mini Generator                         │
 │     Transform scene with DAG constraints injected               │
-│     Maintain emotional arc & narrative coherence                │
+│     Maintain emotional arc & narrative coherence                |
+|     Supports: prose_narrative (capped ~250 words) or screenplay │
 └────────────────────────┬────────────────────────────────────────┘
                          │
                          ▼
 ┌─────────────────────────────────────────────────────────────────┐
 │                  PrecedentLock Validator                        │
-│     Cosine similarity check (threshold: 0.75)                   │
+│     Cosine similarity check (threshold: 0.85)                   │
 │     Ensures emotional fidelity to source                        │
 └────────────────────────┬────────────────────────────────────────┘
                          │
                          ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                 transformed_story.md                            │
+│                 transformed_story.md                            |
+|          Prose narrative (2-3 pages) or full screenplay         │
 │          Final output with preserved narrative logic            │
 └─────────────────────────────────────────────────────────────────┘
 ```
@@ -85,7 +87,7 @@ shakuntalam.txt → parse by markers → DAG sort → FAISS retrieve → GPT-4o-
 
 **Retrieval**: Embed world_rules.json with all-MiniLM-L6-v2 into FAISS. For each scene, get top-3 relevant rules. Keeps prompt focused - Dushyanta stays Senior Associate, doesn't become judge.
 
-**Generation**: Temperature 0.7. Inject constraints from DAG node: "This is a GIFT, not a loan" for ring_exchange, "Gautami does NOT appear" for early scenes. Max tokens 1800 (bumped up after scenes cut off).
+**Generation**: Temperature 0.7. Inject constraints from DAG node: "This is a GIFT, not a loan" for ring_exchange, "Gautami does NOT appear" for early scenes. Max tokens 1800 (bumped up after scenes cut off). Format controlled via world_rules.json - prose mode adds length cap (~200-250 words/scene), screenplay mode allows longer output.
 
 **Validation**: Called it PrecedentLock. Cosine similarity between original and transformed (first 500 chars). Threshold 0.85 - tried 0.7 first (too many false positives, flagged everything), tried 0.9 (missed actual drift). 0.85 felt right but honestly still tuning.
 
