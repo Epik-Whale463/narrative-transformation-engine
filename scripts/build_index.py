@@ -1,11 +1,26 @@
 import json
 import faiss
 import numpy as np
+import argparse
+import os
 from sentence_transformers import SentenceTransformer
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--world", default="legal", help="Which world to build index for (legal, bollywood)")
+    args = parser.parse_args()
+    
+    world_name = args.world
+    input_path = f'data/world_rules_{world_name}.json'
+    
+    if not os.path.exists(input_path):
+        print(f"Can't find {input_path}. Create the world rules file first.")
+        return
+    
+    print(f"Building index for world: {world_name}")
+    
     # Load the world rules
-    with open('data/world_rules.json', 'r') as f:
+    with open(input_path, 'r', encoding='utf-8') as f:
         world = json.load(f)
         
     chunks = []
@@ -48,10 +63,10 @@ def main():
     faiss.normalize_L2(embeddings)
     index.add(embeddings)
     
-    faiss.write_index(index, "data/world_vectors.index")
-    np.save("data/world_chunks.npy", np.array(chunks))
+    faiss.write_index(index, f"data/world_vectors_{world_name}.index")
+    np.save(f"data/world_chunks_{world_name}.npy", np.array(chunks))
     
-    print(f"Done. Index: {index.ntotal} vectors, dim {dimension}")
+    print(f"Done. Saved: world_vectors_{world_name}.index, world_chunks_{world_name}.npy")
 
 if __name__ == "__main__":
     main()
