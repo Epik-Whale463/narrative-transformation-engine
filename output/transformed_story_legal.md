@@ -3,147 +3,149 @@
 
 
 Scene: Hunt scene
-The office of Puru Law Partners buzzed with the urgency of a high-stakes case, but Dushyanta was focused on a different pursuit. He was seated before his desk, poring over case files when Mathavya burst in, logging every detail of the day’s happenings with his usual dry commentary.
+The sun shone brightly as Dushyanta, Senior Associate at Puru Law Partners, scanned the dense forest from the chariot, his brow furrowed in concentration. “Mathavya, we’ve lost track of the antelope. The chase is becoming convoluted,” he remarked, steadying his bow, a symbol of his determination.
 
-“Junior associates, like antelopes, seem to think they can evade responsibility,” Mathavya muttered, glancing up from his tablet. 
+Mathavya, the junior associate, leaned against the chariot's railing, his usual sarcasm softened by the adrenaline of the pursuit. “Great Prince, the deer is fleet, but we are equipped for this. Just ensure you don’t miss; it would complicate our case file.”
 
-Dushyanta looked up, the corners of his mouth turning up slightly. “We’re not in a courtroom yet, Mathavya. This is merely a chase for information.”
+“Focus on the path, Mathavya. The antelope’s grace is deceptive,” Dushyanta replied, his gaze fixed ahead. “We need to close the distance quickly. Its movements are erratic, revealing its instinct to evade.”
 
-“Information or the antelope?” Mathavya replied, unimpressed. “Either way, we’re at a disadvantage without all the necessary documentation. She’s living in a forest archive, and I doubt she’s registered.”
+The charioteer, sensing the urgency, replied, “Sir, the terrain ahead is uneven. I’ll check our speed.” He pulled the reins, slowing their advance momentarily.
 
-“Exactly,” Dushyanta replied, his tone composed yet urgent. “We need to secure her consent, establish her identity.” He leaned forward, the gravity of their task weighing on him. “Without that, her rights remain unrecognized, and we can’t proceed with the case.”
+Dushyanta nodded, resolute. “Prepare to gain ground. This pursuit might not only yield a trophy but could also establish our claim.” 
 
-Mathavya sighed, his eyes narrowing. “And without a proper ID, she’s invisible in the system. We’re chasing shadows here.”
-
-Dushyanta straightened, determination sparking in his gaze. “Then we must make her visible. Our pursuit is not merely of a case, but of justice.” 
-
-He stood, ready to mobilize their resources. “Let’s begin with the forest archive. We won’t let this opportunity slip away.”
+As the chariot gained momentum, Dushyanta felt the thrill of the chase pulse through him. “Now! Let’s not lose our chance,” he urged, as the horses surged forward, their determination matching his own. The antelope was still in sight, a fleeting opportunity to assert his rights in the wild.
 
 Scene: Meeting/watering plants
-In the dense foliage of the forest archive, Shakuntala, clad in her unconventional attire, tended to the plants with meticulous care. “This way, my dear companions,” she instructed, her voice steady. Mathavya, a junior associate with a penchant for complaining, rolled his eyes as he logged the day's activities. 
+In a secluded corner of the forest archive, Shakuntala tended to the plants with a gentle care, the early morning sun filtering through the trees. Her bark dress, though unconventional, clung to her form, revealing a vibrant grace that belied the simplicity of her attire. With a watering can in hand, she spoke to her companions, “This duty is not a burden; it’s an expression of my affinity for these plants.”
 
-“Honestly, Shakuntala, one would think Kanva has more affection for these shrubs than for you, considering he assigns you this task,” he remarked dryly.
+From behind a thicket, Dushyanta observed her, intrigued by her poise amidst the greenery. He had come to the forest for a case consultation, yet found himself captivated by the woman before him. “Is this truly the daughter of Kanva, residing here without formal recognition?” he mused silently, impressed by her resilience.
 
-Shakuntala smiled, her confidence unwavering. “Though it may seem like a burden, I find a certain joy in nurturing these plants. They, too, deserve care.”
+“Anasūyā, this dress is tighter than it should be,” Shakuntala remarked, adjusting her attire with a playful sigh. 
 
-Dushyanta, a senior associate observing from a distance, felt a pull of intrigue. He watched her, noting how the bark of her dress seemed to accentuate her resolve rather than diminish it. “Is this truly the daughter of Kanva?” he pondered silently. “Such grace should not be confined to this secluded life.”
+“Blame your own youthful exuberance,” Anasūyā replied with a smirk, loosening the fabric. 
 
-As Shakuntala adjusted her attire, she turned to her companions, “This garment feels a bit restrictive,” she said with a hint of amusement. Mathavya smirked, “Blame your own blooming youthfulness; it’s not the bark’s fault.”
+Dushyanta stepped forward, breaking the barrier of observation. “Excuse me, but it seems the legal system has overlooked someone as remarkable as you. How can one prove their identity when they live outside the confines of registration?” 
 
-Caught in this moment, Dushyanta stepped forward, his voice calm yet assertive. “Shakuntala, your dedication here speaks volumes. It’s a testament to your character, even if the system has yet to recognize it.”
+Shakuntala met his gaze, her assertiveness shining through. “I may lack a formal ID, but my essence is undeniable. Who I am cannot be captured on paper.” 
+
+Dushyanta nodded, the weight of her words resonating deeply as he felt a connection form—an unspoken understanding of their respective struggles.
 
 Scene: Lineage reveal
-In a dimly lit conference room at Puru Law Partners, Dushyanta reviewed the dossier on Shakuntala, a woman whose very identity was marred by a lack of official documentation. The stakes were high; without proof of lineage, her claim to the unregistered property she sought was tenuous at best. He turned to Anasuya, a seasoned partner, who had taken an interest in the case.
+In the dim light of the office, Dushyanta reviewed the case file on Shakuntala, his brow furrowing as he absorbed the complexities of her situation. She stood before him, her gaze unwavering. “I need to prove my identity,” she asserted, her voice firm. “Kanva may be my guardian, but without formal recognition, I am nothing in the eyes of the law.”
 
-“Her guardianship under Kanva may not hold in court,” Dushyanta noted, his voice steady. “We need to establish her lineage to validate her claims.”
+Dushyanta nodded, empathy etched on his features. “Your guardianship provides a foundation, but without registration, we face significant barriers. We need a clear lineage to proceed.” 
 
-Anasuya nodded thoughtfully. “If she can provide any evidence of her heritage, it would significantly strengthen her position. We must find a way to authenticate her identity.”
+At that moment, Anasuya entered, her presence commanding attention. “I’ve been reviewing the precedents related to unregistered claims,” she stated, a hint of optimism in her tone. “There are cases where individuals have reclaimed their status based on credible testimonies and evidence of guardianship.”
 
-Shakuntala, standing resolute, interjected, “I may lack an ID, but I have memories, connections, and the truth of my lineage. I can gather testimonies from those who know me. That should count for something, right?”
+Shakuntala’s eyes brightened with hope. “Then we gather the evidence. I can call upon those who witnessed my life with Kanva. It’s time to establish my rightful place.”
 
-Dushyanta's gaze met hers, a flicker of hope igniting. “Yes, Shakuntala. Affidavits from credible witnesses can serve as a solid basis for your claim. We can build a case around your narrative.”
+Mathavya, leaning against a filing cabinet, chimed in dryly, “You’d think this would be simpler. But the legal system thrives on complications.” 
 
-Mathavya, leaning against the wall, sighed. “If only the system were as accommodating as your optimism, Dushyanta. But we’ll need more than just stories to convince the court.”
+Dushyanta shot him a look, then turned back to Shakuntala. “Let’s outline your witnesses. This might be the breakthrough we need.” 
 
-“Then let’s gather those stories,” Dushyanta replied, determination etched on his face. The path was fraught with challenges, but the possibility of recognition hung in the air.
+As they strategized, the weight of possibility hung in the air, and for the first time, Shakuntala felt the stirrings of hope in her uncertain future.
 
 Scene: Ring exchange - CRITICAL
-As Dushyanta approached Shakuntala, he held the notary seal in his hand, the digital signature a powerful symbol of his commitment and recognition of her existence in a world that had overlooked her. 
+In the quiet confines of the forest archive, Dushyanta regarded Shakuntala with a mixture of resolve and empathy. He reached into his briefcase, withdrawing the notary seal — a digital signature that bore his identity as a Senior Associate at Puru Law Partners. This was not merely a tool of validation; it was a promise of recognition, a commitment to ensure her rights were acknowledged within the legal framework.
 
-“Shakuntala,” he began, his tone steady yet warm, “this seal represents more than just my identity. It is a promise of support for your rightful claims. You need this to establish your status and secure your future.”
+“Shakuntala,” he said, his voice steady, “this seal is more than just a mark. It is your pathway to legal acknowledgment. Accept it as a testament to my commitment to your case. You will need it.”
 
-Shakuntala met his gaze, her eyes sharp with determination. “You understand the weight of this token, Dushyanta. It’s not merely a seal; it’s a recognition of my existence and rights. I accept it, not just as a gift, but as a commitment to my future.”
+Shakuntala's eyes narrowed, not in suspicion but in determination. “You offer me your notary seal as a gift, without expectation? This is not merely a formality; it’s a foundation for my identity.” 
 
-He extended his hand, placing the seal into hers. “This is a gift. I do not expect it back. Use it to assert your claims, to carve out your place in the legal framework that has denied you.”
+“Yes,” Dushyanta affirmed, placing the seal in her palm. “You deserve to be recognized for who you are. This will aid you in claiming your rightful place.”
 
-“Thank you,” she replied, her voice firm. “With this notary seal, I can finally challenge the shadows of my past and claim my identity.” 
+She accepted the seal, her grip firm. “Then let us ensure that this gift is not in vain. With this, I will assert my identity and rights, and we will challenge any jurisdiction that dares to overlook my existence.” 
 
-Mathavya observed silently, noting the gravity of the moment. “So, we’re officially in the business of changing lives now?” he quipped dryly, breaking the tension with an understated wryness.
+Mathavya, observing from the side, couldn’t resist a dry remark, “Hope this gift doesn’t come with hidden fees.” 
 
-Together, Dushyanta and Shakuntala stood resolute, bound by the trust embedded in the token exchanged, ready to navigate the complexities of the legal landscape ahead.
+Dushyanta shot him a glance, but his focus remained on Shakuntala, the weight of their shared endeavor palpable in the air.
 
 Scene: Mathavya complains
-Mathavya sat at the cluttered desk, his eyes fixed on the towering stack of case files before him. "What a stroke of misfortune this is," he muttered, his voice dripping with exasperation. "I’m drowning in paperwork while Dushyanta indulges in daydreams. 'Here’s another precedent!' 'That’s a compelling argument!' Meanwhile, I’m left sifting through the detritus of this law firm."
+Mathavya leaned back in his chair with a sigh, the weight of the day pressing down on him. “What a fortunate life I lead,” he remarked dryly, glancing at Dushyanta, who seemed lost in thought. “While you’re off daydreaming, I’m drowning in case files and affidavits. Just yesterday, I had to sift through three different contracts, and what do I get? A headache, and the distinct pleasure of watching my coffee grow cold.”
 
-He glanced up at Dushyanta, who stood gazing out the window, lost in thought. "You know, I might as well file my complaints under 'excessive distractions.' Every time we have a task, it’s like chasing shadows. The moment I look away, you’re off thinking about that woman from the forest archive—what’s her name? Shakuntala? We’re here, in the office, while you’re lost in whatever fantasy she’s conjured up.”
+Dushyanta, still preoccupied, offered a distracted nod, his mind elsewhere. “I understand, Mathavya. The workload is significant.”
 
-Dushyanta blinked, shaking off the reverie. "Mathavya, we have pressing matters to attend to."
+“Significant? That’s an understatement,” Mathavya replied, his voice laced with frustration. “Between tracking down notary seals and ensuring compliance, I might as well be in the jungle myself. And yet, here you are, fixated on something—or someone—else.”
 
-“Pressing? Try overwhelming,” Mathavya replied, his tone dry. “I’m the only one here who seems to remember we have deadlines. While you’re enraptured by the thought of her notary seal, I’m the one logging every minute detail. This isn’t just busywork; it’s a full-blown crisis.”
+Dushyanta’s gaze drifted further away, reflecting a mixture of longing and distraction. “There are certain matters that require contemplation,” he murmured, the corners of his mouth barely lifting.
 
-Dushyanta turned back to his associate, a hint of a smile breaking through the distraction. “I appreciate your commitment, Mathavya. We’ll get through this.”
+“Contemplation? You mean pining over Shakuntala?” Mathavya quipped, raising an eyebrow. “You know, if you spent half as much time on your work as you do daydreaming, we might actually catch up on our deadlines.”
 
-“Let’s hope so,” Mathavya sighed, “or I might have to file a motion for a break.”
+Dushyanta offered no response, lost in thoughts of the woman from the forest archive, while Mathavya rolled his eyes, resigned to the chaos of their legal world.
 
 Scene: Demon defense excuse
-In the sterile conference room of Puru Law Partners, Dushyanta stood before a group of hermits, their robes a stark contrast to the polished furniture. They had come seeking assistance against disturbances from a band of unscrupulous entities disrupting their sacred practices. “We request your presence, Senior Associate,” one of the hermits implored, “to help restore order in our domain. Your expertise is paramount.”
+In the quiet confines of Puru Law Partners, Dushyanta stood resolute, grappling with the conflicting demands of duty and desire. He had just received a summons from a group of hermits, their plea tinged with urgency. "We are beset by disturbances that hinder our sacred rites," one elder implored, his voice steady. "We require your presence for a few days to restore order."
 
-Dushyanta nodded, recognizing the weight of their request. “I am honored by your invitation, but my duties extend beyond this case,” he replied, his tone steady. The urgency in their eyes prompted him to consider how he might balance this call to action with conflicting obligations.
+Dushyanta nodded, understanding the gravity of their request. "I am honored by your invitation," he replied, his tone composed yet empathetic.
 
-Mathavya, seated nearby, interjected dryly. “Seems a convenient distraction from more pressing matters,” he remarked, logging the details in his notebook.
+Mathavya, perched at his desk, interjected dryly, "Most opportune and convenient, certainly.” He scribbled furiously in the case file, capturing every detail.
 
-Dushyanta turned to him. “Your cynicism is noted, Mathavya. But assisting those in need is a duty we cannot ignore.”
+As Dushyanta prepared to leave, he felt the weight of a pressing dilemma. "I must balance the needs of the hermits with my obligations to the firm and my mother’s expectations," he reflected. The Queen had summoned him for an important family ceremony, a duty as vital as the one to the hermits.
 
-“True, but with the Queen’s summons pending, you’re caught between duty and desire,” Mathavya added, his voice flat.
+"Never fear," he reassured Mathavya, “you shall accompany me for protection.”
 
-Dushyanta weighed the implications. “Indeed, both obligations are sacred.”
+Mathavya sighed, “Great. Just what I need—guarding against demons while juggling your familial obligations.”
 
-As the weight of the decision loomed, Shakuntala’s presence lingered in his mind, her notary seal a reminder of her identity and the urgency of her plight. “I will follow the hermits shortly,” he said, determination etching his features. “We cannot let the demons prevail.”
+Dushyanta’s thoughts turned to Shakuntala, her notary seal clutched tightly in her grasp. He knew she possessed the evidence of her identity, yet the curse that bound her remained a technical barrier. He would not retrieve the seal; it was a gift, a testament to her resolve.
 
 Scene: Lovesickness
-Dushyanta stood in the dim light of his office, a weight pressing on his chest. He gazed out the window, lost in thought, yearning for Shakuntala to contact him. The notary seal she carried was a tangible reminder of their bond; it represented more than just a formality—it symbolized her commitment and the rights she would claim.
+Dushyanta stood in the dimly lit office of Puru Law Partners, a palpable silence enveloping him, broken only by the soft rustle of case files. His thoughts were consumed by Shakuntala, the woman whose absence weighed heavily on his heart. He sighed, reflecting on the complexities of their relationship, bound now by legal intricacies yet steeped in emotion.
 
-“Why has she not reached out?” he murmured, his voice steady yet tinged with despair. “The law recognizes our connection; the seal is proof of her stake in my life. Yet here I am, left waiting.”
+"The notary seal," he murmured to himself, "is a mere formality, yet it symbolizes so much more." He knew she possessed it, a testament to their connection, but it was not the seal that drew him to her. It was the profound yearning for her presence, the desire for recognition of their bond.
 
-His mind drifted to the last time they spoke, her confidence illuminating the room. “Dushyanta, trust the process. I will come when the time is right.” Those words echoed in his memory, a bittersweet promise that now felt like a distant dream.
+"Mathavya," he called, his voice steady but laced with longing, "do you think she will come back? Will she contact me?"
 
-He paced slowly, contemplating their case file, the documents he had meticulously prepared. “Love and law are intertwined,” he mused. “Each requires trust, recognition, and patience.” A sigh escaped his lips as he glanced at the empty chair opposite him, wishing for her presence. “Shakuntala, I await your return—not for the seal, but for you. This longing is a burden I will bear, if only to see you again.” 
+Mathavya, seated at his cluttered desk, glanced up, his expression dry. "Given the stakes, she’d be wise to reach out. But love is rarely governed by reason, Dushyanta."
 
-In that moment, the silence of the office felt heavier than ever, a testament to his unresolved emotions and the unfulfilled promise of their future together.
+Dushyanta paced, the weight of his emotions pressing down. "This legal labyrinth feels insurmountable without her. Each day without her is a reminder of the rights I stand to lose."
+
+"Or gain," Mathavya retorted, tapping his pen against the desk, "if she claims her stake."
+
+Dushyanta's heart ached with the uncertainty. "I only wish to see her again, to know she remembers." The longing was not just for the seal, but for the promise it represented.
 
 Scene: Love letter writing
-In the quiet confines of the forest archive, Shakuntala sat cross-legged on the ground, the notary seal resting securely in her possession. The absence of official attire weighed heavily on her shoulders, a reminder of her precarious status. Yet, she was determined to assert her identity. 
+In the quiet recesses of the forest archive, Shakuntala contemplated the complexities of her existence. She held a folded handwritten note, a document that bore the weight of their unregistered agreement—a promise made in the tender moments between her and Dushyanta. Despite the lack of formal recognition, she understood its significance. 
 
-Dushyanta, a Senior Associate at Puru Law Partners, approached with a calm demeanor. “Shakuntala, I understand the challenges you face. Your guardianship under Kanva is not recognized without formal documentation.”
+"Dushyanta," she began, her voice steady yet vibrant, "this note may not have the elegance of a registered contract, but it represents our mutual consent. It is valid in its truth." 
 
-“I am more than a mere fragment of paper,” she replied, her voice steady. “The validity of our agreement is evident in my possession of this seal. It signifies consent, regardless of jurisdiction.”
+Dushyanta, Senior Associate at Puru Law Partners, leaned against a tree, his expression composed. "I appreciate your resolve, Shakuntala. But without proper documentation, your status remains precarious. The bark dress you wear—" 
 
-He nodded, appreciating her resolve. “However, without registration, it risks being dismissed in court.”
+"—is not a reflection of my worth," she interjected, her wit sharp. "Kanva may hold my guardianship, but I am more than just my appearance or my official status. I possess the notary seal, which can authenticate our agreement." 
 
-“Then let us not allow that to happen,” she countered, a spark of wit illuminating her expression. “We can present this as evidence of our bond. A handwritten note may lack formality, but it carries weight in our shared understanding.”
+"You must understand, the legal system is unforgiving. We need a precedent to support your claim." 
 
-Dushyanta leaned in, his tone earnest. “Your confidence is commendable, but I need to ensure that this case file stands strong against any opposition.”
+"I'm not asking for charity," she replied, her tone unwavering. "I seek recognition, and I will not relinquish the seal. It is a gift from you, a testament to our bond." 
 
-“Then let us prepare it together,” Shakuntala asserted, her eyes locked with his. “Our love is not merely a matter of legality; it is a reality that demands recognition.” 
+Mathavya, observing from a distance, sighed. "This isn’t a romantic exchange, you know. It’s about legality." 
 
-In that moment, the forest felt alive with the promise of their intertwined fates, a testament to their commitment in the face of adversity.
+"Exactly," Shakuntala asserted, "and love has its place within the law."
 
 Scene: Union scene
-In the dim light of Dushyanta's private office at Puru Law Partners, the atmosphere was thick with unspoken understanding. Shakuntala stood firm, her presence commanding, the notary seal resting securely in her grasp. “This seal represents our mutual agreement, Dushyanta. It may not be registered, but it holds weight in the eyes of common law.”
+In the quiet confines of Dushyanta’s office at Puru Law Partners, a palpable tension hung in the air, thick with unspoken agreements and the weight of unregistered claims. Shakuntala stood before him, the notary seal resting firmly in her possession. The seal, a symbol of their mutual commitment, shimmered with the validity of their bond, transcending the limitations of bureaucratic recognition.
 
-Dushyanta, ever composed, met her gaze with empathy. “I recognize that, Shakuntala. Our commitment transcends bureaucratic formalities. We are bound by our own consent, and that is powerful.” He leaned forward, his tone precise. “But without official status, how will we navigate potential claims?”
+“Dushyanta,” she began, her voice steady yet resolute, “this seal represents our agreement. It validates our union, regardless of the absence of formal registration. I refuse to return it, as it is not merely a tool of bureaucracy but the embodiment of our consent.”
 
-Shakuntala’s voice was resolute. “We will create our own precedent. This union is valid, with or without a case file. I won’t return the seal; it’s a testament to our bond.” 
+Dushyanta nodded, understanding the gravity of her words. “I appreciate your stance, Shakuntala. This seal affirms our common law marriage, even without the system recognizing it. My commitment to you stands firm, irrespective of any legal limitations.”
 
-Mathavya, seated nearby, rolled his eyes, his wry tone cutting through the tension. “So, you’re essentially saying you’ll overwrite the system with a handwritten note and a seal?”
+She met his gaze, a flicker of warmth in her eyes. “Then let us embrace this union fully, without the constraints of paperwork. Our bond is valid in its essence.”
 
-Dushyanta ignored Mathavya's sarcasm, focusing on Shakuntala. “If you’re willing to stand by this, I am too. Let’s carve our path together.” 
+With a soft smile, Dushyanta replied, “Agreed. We will navigate this together, as partners in every sense.”
 
-Shakuntala nodded, a faint smile breaking through. “Then let's proceed, Dushyanta. This is our union, recognized by us.” In that moment, the weight of their decision settled, a commitment forged in the quiet strength of their agreement.
+Their shared acknowledgment transformed the space, solidifying their connection beyond the confines of legal validation. In that moment, they forged a path forward, united by their understanding and commitment.
 
 Scene: Separation
-The conference room at Puru Law Partners was quiet, the tension palpable as Shakuntala stood near the exit, clutching a stack of papers—a testament to her struggle for recognition. Dushyanta, seated at the head of the table, regarded her with a blend of empathy and frustration.
+As the sun dipped below the horizon, the atmosphere in the office of Puru Law Partners was thick with unspoken tension. Dushyanta, a senior associate, stood before Shakuntala—a woman whose existence was marred by bureaucratic errors. Without an official ID, she remained outside the system’s reach. 
 
-“Your case lacks the requisite documentation, Shakuntala. Without a registration, the courts will not acknowledge your status,” he stated, his voice steady yet concerned.
+“Your case is compelling, Shakuntala, but without your registration, we face a significant hurdle,” Dushyanta stated, his voice steady yet sympathetic. 
 
-“I refuse to be reduced to a mere technicality. I am more than a missing affidavit,” Shakuntala replied, her tone assertive. “I deserve acknowledgment, not dismissal.”
+“I understand the obstacles, but I refuse to be defined by a mere technicality,” Shakuntala replied, her assertive tone cutting through the air. “This is about recognition, not just paperwork. I deserve acknowledgment of my identity.”
 
-Mathavya, sitting in the corner, logged the exchange with a dry chuckle. “Great, another day in the legal jungle. Just remember, we’re all just one missing notary seal away from oblivion.”
+Mathavya, seated at his desk, interjected, “And I deserve a coffee that doesn't taste like despair. But here we are.” His wry observation momentarily lightened the atmosphere.
 
-Just as Shakuntala began to respond, Gautami burst into the room, a vase in hand, flanked by two attendants. “My child, is your resolve wavering? We must secure your standing before the day ends,” she urged, urgency in her tone.
+Just as Dushyanta was about to respond, Gautami burst into the office, a vase in hand, flanked by two attendants. “Shakuntala, is your health improving?” she inquired, concern etched on her face.
 
-Shakuntala hesitated, torn between her desire for recognition and the pull of her past. “This place may seem binding, but I cannot abandon my fight for validation,” she murmured, her heart heavy.
+“Mother, I’m managing, but this situation…” Shakuntala’s voice trailed off, frustration evident.
 
-Dushyanta sighed, “We face many obstacles, yet your strength is undeniable. We will find a way.”
+“Come, let’s not linger here. We have to prepare,” Gautami insisted, urging them toward the door.
 
-As Gautami approached her, the weight of unresolved desires lingered in the air, a bittersweet reminder of the challenges ahead.
+As they moved, Shakuntala cast a lingering glance back at Dushyanta, her heart heavy. “Farewell, then. May I find my place within this legal labyrinth.” The words hung in the air, bittersweet and unresolved, as the door closed behind them, leaving Dushyanta with a weight of unfulfilled promise.
