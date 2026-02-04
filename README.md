@@ -1,5 +1,7 @@
 # Shakuntalam Legal Transformation
 
+## A pipeline that generates stories grounded in a defined world and template, ensuring consistency and coherence beyond generic LLM outputs.
+
 Transforms Shakuntalam (Sanskrit drama) into modern legal drama. Uses RAG + DAG to keep narrative consistent.
 
 **Source text**: Monier-Williams translation (1855), public domain. Got it from sacred-texts.com
