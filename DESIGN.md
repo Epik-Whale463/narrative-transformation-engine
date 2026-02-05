@@ -1,8 +1,18 @@
 # How I Built This
 
+# Narrative Transformation: Legal Edition
+
+**Architectural Approach:** This treats narrative transformation as a **state machine engineering problem**, not a prompt engineering task. I use deterministic constraints validated by graph topology and vector math, rather than relying on probabilistic prompt compliance (hoping an LLM respects JSON schema).
+
+- **NetworkX DAGs** enforce narrative causality (topological sort prevents temporal paradoxes like "returning a ring before receiving it")
+- **FAISS + all-MiniLM-L6-v2** retrieve world rules by embedding similarity instead of static context dumping  
+- **PrecedentLock validation** uses cosine similarity (threshold 0.85) for reproducible thematic fidelity, replacing slow/subjective LLM-as-judge
+
+---
+
 ## Starting Point
 
-Asked GPT-4 to rewrite Shakuntalam as legal drama. Failed hard 😂.
+I tried asking GPT-4 to rewrite Shakuntalam as legal drama. Failed hard 😂.
 
 First output had Shakuntala refusing to return ring before Dushyanta gave it to her. Characters appeared in wrong acts. Realized preserving narrative logic is harder than swapping words.
 
