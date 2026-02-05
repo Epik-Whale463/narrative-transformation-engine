@@ -1,8 +1,8 @@
 # How I Built This
 
-# Narrative Transformation: Legal Edition
+# Narrative Transformation:
 
-**Architectural Approach:** This treats narrative transformation as a **state machine engineering problem**, not a prompt engineering task. I use deterministic constraints validated by graph topology and vector math, rather than relying on probabilistic prompt compliance (hoping an LLM respects JSON schema).
+**Architectural Approach:** I treated narrative transformation as a **state machine engineering problem**, not a prompt engineering task. I use deterministic constraints validated by graph topology and vector math, rather than relying on probabilistic prompt compliance (hoping an LLM respects JSON schema).
 
 - **NetworkX DAGs** enforce narrative causality (topological sort prevents temporal paradoxes like "returning a ring before receiving it")
 - **FAISS + all-MiniLM-L6-v2** retrieve world rules by embedding similarity instead of static context dumping  
