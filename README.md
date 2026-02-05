@@ -1,7 +1,7 @@
 # Shakuntalam Narrative Transformer
 ##  AI is the executor, not the decision-maker.
 
-### A system that generates transformed stories whose quality is architecturally guaranteed by embedding validation and causal state machines, not by prompt engineering.
+### A system that generates transformed stories whose quality is architecturally guaranteed by embedding validation and causal state machines, not by vanilla prompt engineering.
 
 Takes Shakuntalam (Sanskrit drama) and transforms it into different modern settings while keeping the story structure intact. Currently supports Legal Drama and Bollywood Romance worlds.
 
